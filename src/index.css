@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-zinc-950: #f3f7ef;
+  --color-zinc-900: #ffffff;
+  --color-zinc-800: #e4ebdf;
+  --color-zinc-700: #cbd8c4;
+  --color-zinc-600: #73816d;
+  --color-zinc-500: #5b6b55;
+  --color-zinc-400: #485943;
+  --color-zinc-300: #354a34;
+  --color-zinc-200: #293f2a;
+  --color-zinc-100: #203621;
+  --color-zinc-50: #152b18;
+}
+
+.font-display {
+  font-family: "Fraunces", Georgia, serif;
+}
+
+body {
+  background-color: var(--color-zinc-950);
+  color: var(--color-zinc-100);
+}
+
+.text-white {
+  color: #203621;
+}
+
+button.text-white,
+button.bg-emerald-600.text-white,
+button.bg-emerald-500.text-white,
+button.bg-blue-600.text-white,
+button.bg-amber-600.text-white,
+button.bg-rose-600.text-white {
+  color: #ffffff;
+}
+
+button.bg-zinc-800.text-white {
+  color: #293f2a;
+}
+
+ :is([class*="bg-emerald-600"], [class*="bg-emerald-500"], [class*="bg-blue-600"], [class*="bg-amber-600"], [class*="bg-rose-600"]).text-white {
+  color: #ffffff;
+}
+
+[class*="bg-black/"] .text-white {
+  color: #ffffff;
+}
+
+@keyframes scanLine {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-scan {
+  animation: scanLine 2.5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

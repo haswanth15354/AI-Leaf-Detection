@@ -1,0 +1,176 @@
+import { DiseaseAtlasEntry } from '../types/disease';
+
+export const DISEASE_ATLAS: DiseaseAtlasEntry[] = [
+  {
+    id: 'late-blight',
+    name: 'Late Blight',
+    scientificName: 'Phytophthora infestans',
+    type: 'Oomycete',
+    vulnerableCrops: ['Tomato', 'Potato', 'Eggplant', 'Petunia'],
+    symptoms: [
+      'Large, irregular water-soaked spots on leaves that turn brown/purplish-black',
+      'White cottony fungal down on undersides of leaves during high humidity',
+      'Stem cankers turning dark and brittle',
+      'Greasy brown firm rot on fruit or tubers',
+    ],
+    favorableConditions: 'Cool, wet, humid weather (15°C - 22°C / 60°F - 72°F) with prolonged foliage wetness.',
+    organicTreatments: [
+      'Fixed copper fungicide (Copper Hydroxide / Copper Octanoate) applied prophylactically',
+      'Bacillus subtilis bio-fungicide foliar drench',
+      'Immediately prune and bag infected foliage (never compost infected tissue)',
+    ],
+    chemicalTreatments: [
+      'Mancozeb or Chlorothalonil protectant sprays prior to infection',
+      'Cymoxanil or Dimethomorph systemic fungicides for active curative arrest',
+      'Mandipropamid (Revus) for high-pressure field blight',
+    ],
+    preventionTips: [
+      'Use certified disease-resistant varieties (e.g., Mountain Magic, Defiant PHR)',
+      'Install drip irrigation and avoid overhead sprinkling',
+      'Space plants generously (at least 24-36 inches) for rapid wind drying',
+      'Maintain 3-year crop rotation away from all Solanaceae family members',
+    ],
+  },
+  {
+    id: 'early-blight',
+    name: 'Early Blight',
+    scientificName: 'Alternaria solani',
+    type: 'Fungal',
+    vulnerableCrops: ['Tomato', 'Potato', 'Pepper'],
+    symptoms: [
+      'Dark brown to black spots with characteristic concentric rings (target board pattern)',
+      'Yellow chlorotic halos surrounding lesions',
+      'Begins on lowest, oldest leaves and works upward',
+      'Premature defoliation exposing fruit to sunscald',
+    ],
+    favorableConditions: 'Warm temperatures (24°C - 29°C / 75°F - 85°F) with alternating wet and dry periods.',
+    organicTreatments: [
+      'Liquid copper octanoate every 7-10 days',
+      'Potassium bicarbonate spray to alter leaf surface pH',
+      'Strip bottom 12 inches of foliage to prevent soil splash',
+    ],
+    chemicalTreatments: [
+      'Azoxystrobin (Quadris) systemic strobilurin',
+      'Chlorothalonil broad-spectrum protective barrier',
+      'Difenoconazole + Azoxystrobin combo for resistant strains',
+    ],
+    preventionTips: [
+      'Heavily mulch base of plants with straw or plastic to block soil spore bounce',
+      'Sterilize pruning shears between plants with 70% isopropyl alcohol',
+      'Remove all crop debris thoroughly at the end of the harvest season',
+    ],
+  },
+  {
+    id: 'powdery-mildew',
+    name: 'Powdery Mildew',
+    scientificName: 'Erysiphe / Podosphaera spp.',
+    type: 'Fungal',
+    vulnerableCrops: ['Cucumber', 'Zucchini', 'Pumpkin', 'Grape', 'Apple', 'Rose', 'Cannabis'],
+    symptoms: [
+      'White to talcum-gray powdery spots on upper leaf surfaces and stems',
+      'Leaves curl, turn yellow, become dry and brittle',
+      'Distorted new shoot growth and buds',
+      'Stunted fruit development and loss of sweetness',
+    ],
+    favorableConditions: 'Warm, dry climates with high ambient humidity (shady, crowded conditions). Does not require liquid rain!',
+    organicTreatments: [
+      'Potassium bicarbonate or baking soda mix (1 tbsp baking soda + 1/2 tsp vegetable oil + 1 gal water)',
+      'Neem oil or horticultural oil spray (apply early morning or dusk)',
+      'Diluted cow milk spray (40% milk, 60% water) exposed to sunlight creates antiseptic free radicals',
+    ],
+    chemicalTreatments: [
+      'Myclobutanil (Eagle 20EW) or Tebuconazole',
+      'Sulfur dust or wettable sulfur (do not use within 30 days of oil sprays)',
+      'Trifloxystrobin foliar protectant',
+    ],
+    preventionTips: [
+      'Plant in full direct sun (at least 6-8 hours daily)',
+      'Select powdery mildew resistant (PMR) hybrid cultivars',
+      'Aggressively thin dense canopy foliage to maximize air currents',
+    ],
+  },
+  {
+    id: 'bacterial-spot',
+    name: 'Bacterial Leaf Spot',
+    scientificName: 'Xanthomonas campestris / perforans',
+    type: 'Bacterial',
+    vulnerableCrops: ['Pepper', 'Tomato', 'Peach', 'Plum'],
+    symptoms: [
+      'Small, dark, greasy water-soaked spots (1-3mm)',
+      'Lesions enlarge and turn brown with rough scab-like texture',
+      'Severely spotted leaves turn yellow and drop prematurely',
+      'Raised corky warts or blisters on green fruit',
+    ],
+    favorableConditions: 'Hot, stormy weather (25°C - 30°C) with wind-driven rain and high relative humidity.',
+    organicTreatments: [
+      'Copper sulfate combined with Bacillus amyloliquefaciens',
+      'Avoid working in wet gardens to prevent mechanical cross-contamination',
+      'Immediate rogueing (removal) of heavily infected seedlings',
+    ],
+    chemicalTreatments: [
+      'Copper hydroxide mixed with Mancozeb (synergistic bactericidal action)',
+      'Oxytetracycline or Streptomycin in commercial orchard settings where permitted',
+      'Actigard (Acibenzolar-S-methyl) systemic acquired resistance inducer',
+    ],
+    preventionTips: [
+      'Only plant hot-water treated or certified disease-free seeds',
+      'Never overhead irrigate; use soaker hoses directly at the soil line',
+      'Clean stakes, trellis netting, and cages with 10% bleach solution between seasons',
+    ],
+  },
+  {
+    id: 'downy-mildew',
+    name: 'Downy Mildew',
+    scientificName: 'Pseudoperonospora cubensis',
+    type: 'Oomycete',
+    vulnerableCrops: ['Cantaloupe', 'Cucumber', 'Watermelon', 'Spinach', 'Basil', 'Grape'],
+    symptoms: [
+      'Angular, blocky yellow chlorotic patches bounded sharply by leaf veins on upper leaf surface',
+      'Purplish-gray to brown fuzzy spore felt on leaf undersides directly opposite yellow patches',
+      'Rapid leaf necrosis resembling flame scorching',
+    ],
+    favorableConditions: 'Cool to warm wet conditions with continuous leaf wetness for at least 6 hours.',
+    organicTreatments: [
+      'Copper diammonia diacetate or copper octanoate applied to leaf undersides',
+      'Phosphorous acid (Mono- and di-potassium salts of phosphorous acid)',
+      'Destroy crop residue immediately following harvest',
+    ],
+    chemicalTreatments: [
+      'Cyazofamid (Ranman) protectant',
+      'Fluopicolide (Presidio)',
+      'Propamocarb hydrochloride',
+    ],
+    preventionTips: [
+      'Grow vine crops on vertical trellises rather than allowing them to trail on soil',
+      'Orient crop rows in direction of prevailing winds for rapid drying',
+      'Monitor regional Downy Mildew forecast alerts and spray before rain events',
+    ],
+  },
+  {
+    id: 'iron-chlorosis',
+    name: 'Interveinal Iron Chlorosis',
+    scientificName: 'Micronutrient (Fe) Deficiency',
+    type: 'Nutritional',
+    vulnerableCrops: ['Citrus', 'Blueberry', 'Hydrangea', 'Apple', 'Tomato', 'Strawberry'],
+    symptoms: [
+      'Youngest terminal leaves turn bright pale yellow while leaf veins remain distinctly dark green',
+      'In severe deficiency, leaves turn ivory-white with necrotic brown leaf margins',
+      'Poor shoot vigor and fruit drop',
+    ],
+    favorableConditions: 'High soil pH (above 7.2 alkaline/calcareous), waterlogged compacted soils, or excess phosphorus.',
+    organicTreatments: [
+      'Apply chelated iron (Fe-EDDHA for alkaline soils, Fe-EDTA for slightly acidic soils)',
+      'Foliar spray of 0.5% ferrous sulfate solution for instant leaf greening',
+      'Amend soil with elemental sulfur, peat moss, or organic compost to acidify root zone',
+    ],
+    chemicalTreatments: [
+      'Soil drench of commercial iron chelate granules (Sequestrene 138 Fe-EDDHA)',
+      'Balanced acid-forming fertilizer with ammonium sulfate base',
+    ],
+    preventionTips: [
+      'Test soil pH regularly and maintain target range of 6.0 - 6.8 for most vegetables (4.5 - 5.5 for blueberries)',
+      'Improve soil aeration and drainage to prevent root asphyxiation',
+      'Avoid over-fertilizing with high phosphorus fertilizers which bind iron in insoluble forms',
+    ],
+  },
+];

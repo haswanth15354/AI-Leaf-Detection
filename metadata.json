@@ -1,0 +1,9 @@
+{
+  "name": "FloraScan AI - Plant Disease Detection & Crop Doctor",
+  "description": "AI-powered botanical pathology and plant disease detection system with multimodal diagnosis, organic and chemical treatment plans, disease atlas, and crop health tracking.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
